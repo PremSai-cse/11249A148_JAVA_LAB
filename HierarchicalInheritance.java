@@ -1,26 +1,30 @@
-class Employee {
-    void work() {
-        System.out.println("Employee is working");
+class Animal {
+    void eat() {
+        System.out.println("Animal eats");
     }
 }
-class Developer extends Employee {
-    void code() {
-        System.out.println("Developer is coding");
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks");
     }
 }
-class Manager extends Employee {
-    void manage() {
-        System.out.println("Manager is managing the team");
+
+class Cat extends Animal {
+    void meow() {
+        System.out.println("Cat meows");
     }
 }
+
 public class HierarchicalInheritance {
     public static void main(String[] args) {
+        Dog d = new Dog();
+        Cat c = new Cat();
 
-        Developer d = new Developer();
-        d.work();
-        d.code();
-        Manager m = new Manager();
-        m.work();
-        m.manage();
+        d.eat();
+        d.bark();
+
+        c.eat();
+        c.meow();
     }
 }

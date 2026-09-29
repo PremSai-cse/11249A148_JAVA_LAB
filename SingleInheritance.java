@@ -1,21 +1,19 @@
-class Person {
-    void speak() {
-        System.out.println("Person is speaking");
+class SingleAnimal {
+    void eat() {
+        System.out.println("Animal eats");
     }
 }
 
-class Student extends Person {
-    void study() {
-        System.out.println("Student is studying");
+class SingleDog extends SingleAnimal {
+    void bark() {
+        System.out.println("Dog barks");
     }
 }
 
 public class SingleInheritance {
     public static void main(String[] args) {
-
-        Student s = new Student();
-
-        s.speak();
-        s.study();
+        SingleDog d = new SingleDog();
+        d.eat();
+        d.bark();
     }
 }
